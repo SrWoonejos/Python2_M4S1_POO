@@ -6,3 +6,9 @@ class Futbolista(Persona):
         self.posicion = posicion
         self.goles = goles
 
+#metodo jugador
+    def entrenar(self):
+        print(f'{self.nombre} está entrenando.')
+
+    def jugar_partido(self):
+        print(f'{self.nombre} está jugando un partido.')
