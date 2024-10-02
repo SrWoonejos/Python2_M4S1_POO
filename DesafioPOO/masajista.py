@@ -1,6 +1,6 @@
 #clase que deriva a Masajista
 class Masajista(Persona):
-    def__init__(self, nombre, edad, nacionalidad, especialidad):
+    def __init__(self, nombre, edad, nacionalidad, especialidad):
     super().__init__(noombre, edad, nacionalidad)
     self.especialidad = especialidad
 
