@@ -1,24 +1,61 @@
-#clase principal
+# Clase Futbolista
+class Futbolista:
+    def __init__(self, id, nombre, apellido, edad, dorsal, demarcacion):
+        self.id = id
+        self.nombre = nombre
+        self.apellido = apellido
+        self.edad = edad
+        self.dorsal = dorsal
+        self.demarcacion = demarcacion
 
-#importar clases desde los modulos
-from futbolista import Futbolista
-from entrenador import Entrenador
-from masajista import Masajista
+    def concentrarse(self):
+        print(f'{self.nombre} {self.apellido} está concentrándose.')
 
-#instancias de clases
-futbolista = Futbolista("Lionel Messi", 36, "Argentina", "Delantero", 800)
-entrenador = Entrenador("Pep Guardiola", 52, "España", "Posesión de balón", 15)
-masajista = Masajista("John Doe", 45, "Inglaterra", "Fisioterapia", 20)
+    def viajar(self):
+        print(f'{self.nombre} {self.apellido} está viajando.')
 
-#metodos de clases
-print("---Futbolista---")
-futbolista.entrenar()
-futbolista.jugar_partido()
+    def jugarPartido(self):
+        print(f'{self.nombre} {self.apellido} está jugando un partido.')
 
-print("---Entrenador---")
-entrenador.dirigir_entrenamiento()
-entrenador.dirigir_partido()
+    def entrenar(self):
+        print(f'{self.nombre} {self.apellido} está entrenando.')
 
-print("---Masajista---")
-masajista.dar_masaje()
+# Clase Entrenador
+class Entrenador:
+    def __init__(self, id, nombre, apellido, edad, idFederacion):
+        self.id = id
+        self.nombre = nombre
+        self.apellido = apellido
+        self.edad = edad
+        self.idFederacion = idFederacion
 
+    def concentrarse(self):
+        print(f'{self.nombre} {self.apellido} está concentrándose.')
+
+    def viajar(self):
+        print(f'{self.nombre} {self.apellido} está viajando.')
+
+    def dirigirPartido(self):
+        print(f'{self.nombre} {self.apellido} está dirigiendo un partido.')
+
+    def dirigirEntrenamiento(self):
+        print(f'{self.nombre} {self.apellido} está dirigiendo un entrenamiento.')
+
+# Clase Masajista
+class Masajista:
+    def __init__(self, id, nombre, apellido, edad, titulacion, annosExperiencia):
+        self.id = id
+        self.nombre = nombre
+        self.apellido = apellido
+        self.edad = edad
+        self.titulacion = titulacion
+        self.annosExperiencia = annosExperiencia
+
+    def concentrarse(self):
+        print(f'{self.nombre} {self.apellido} está concentrándose.')
+
+    def viajar(self):
+        print(f'{self.nombre} {self.apellido} está viajando.')
+
+    def darMasaje(self):
+        print(f'{self.nombre} {self.apellido} está dando un masaje.')
